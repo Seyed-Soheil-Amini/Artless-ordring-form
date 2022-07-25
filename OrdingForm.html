@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Form</title>
+		<link type="text/css" rel="stylesheet" href="style.css" />
+	</head>
+	<body align="center" valign="middle">
+		<h1 id="h1" style="background-image:url('Desert.jpg');">Learning Project</h1>
+		<h2 style="font-family:Elephant;">Wellcome</h2>
+		<div id="content" align="center" valign="middle">
+			<div id="header">
+				<p id="p1">آموزشی  و کمک آموزشی کنکور سهیل</p>
+				<p id="p1">با بیش از نیم قرن تجربه و افتخار</p>
+			</div>
+			<div id="right" align="center" valign="middle">
+				<ul>
+					<li>مجموعه کتاب های خط سفید</li>
+					<li>مجموعه کتاب های میکرو طلایی</li>
+					<li>مجموعه کتاب های میکرو نقره ای</li>
+					<li>مجموعه کتاب های کلاغ سفید</li>
+					<li>مجموعه کتاب های سیر تا پیاز</li>
+					<li>مجموعه کتاب های زنبور</li>
+					<li>مجموعه کتاب های خط ویژه</li>
+				</ul>
+				
+			</div>
+			<div id="left" align="center" valign="middle">
+					<table border="4" cellpadding="5">
+						<thead>
+						<tr>
+							<td>مقطع تحصیلی</td>
+							<td>قیمت پکیج</td>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>ابتدایی</td>
+							<td>500000 <p>تومان</p></td>
+						</tr>
+						<tr>
+							<td>متوسطه اول</td>
+							<td>750000 <p>تومان</p></td>
+						</tr>
+						<tr>
+							<td>متوسطه دوم</td>
+							<td>1000000 <p>تومان</p></td>
+						</tr>
+						<tr>
+							<td>کنکور</td>
+							<td>1200000 <p>تومان</p></td>
+						</tr>
+						<tr>
+							<td>دانشگاه</td>
+							<td>1500000 <p>تومان</p></td>
+						</tr>
+						</tbody>
+					</table>
+			</div>
+			<div id="footer" align="center" valign="middle">
+				با تضمین کیفیت
+			</div>
+			
+		</div>
+		<div id="inf" align="center" valign="middle">
+			<form action="server.php" method="get" align="right"> 
+				<fieldset>
+					<legend>فرم اطلاعات خرید محصولات</legend>
+					<b>نام و نام خانوادگی خریدار:</b>
+					<input type="text" id="name" name="name" />
+					<input type="button" value="ثبت" /><br />
+					<b>شماره تماس خریدار:</b>
+					<input type="text" id="number" name="number" />
+					<input type="button" value="ثبت" /><br />
+					استان محل سکونت:
+					<select>
+						<option>تهران</option>
+						<option>تبریز</option>
+						<option>اصفهان</option>
+						<option>مشهد</option>
+						<option>فارس</option>
+						<option>مازندران</option>
+						<option>کرمان</option>
+						<option>سیستان و بلوچستان</option>
+						<option>یزد</option>
+					</select><br />
+					<b>کد پستی محل اقامت:</b>
+                    <input type="text" id="code p" name="code p" />
+					<input type="button" value="ثبت" /><br />
+                    <b>آدرس محل اقامت</b><br />
+                    <textarea cols="50" rows="30"></textarea><br />
+                    <input type="button" value="ثبت" /><br />	
+                    <input type="reset" value="پاک" />&nbsp	&nbsp	&nbsp	&nbsp	
+					<input type="submit" value="ارسال اطلاعات" />
+					</fieldset>
+					<fieldset>
+						<legend>فرم خرید</legend>
+						<p>نوع محصول :</p>
+						<input type="text" id="txt" list="product" />
+						<datalist id="product">
+							<option>میکرو طلایی</option>
+							<option>میکرو نقره ای</option>
+							<option>سیر  تا پیاز</option>
+							<option>زنبور</option>
+							<option>خط ویژه</option>
+						</datalist><br />
+						<input type="radio" name="rdM" value="1" />ابتدایی
+						<input type="radio" name="rdM" value="2" />متوسطه اول
+						<input type="radio" name="rdM" value="3" />متوسطه دوم
+						<input type="radio" name="rdM" value="4" />کنکور
+						<input type="radio" name="rdM" value="5" />دانشگاه
+					</fieldset>
+					<fieldset>
+					<legend>متفرقه</legend>
+					    ایمیل خود را وارد کنید:
+						<input type="text" id="email" name="email"  /><br />
+						از یک تا ده به سایت ما امتیاز دهید:
+						<input type="number" min="1" max="10" /><br />
+						<input type="color" /><br /><br /><br />
+						تايید رضایت شما:
+						<input type="checkbox" value="رضایت شما" /><br />
+						<input type="range" min="خیلی کم" max="خیلی زیاد" /><br />
+						<input type="password" id="pwdpass" /><br />
+						<input type="date" /><br /><br />
+					</fieldset>
+			</form>
+		</div><br />
+		<a href="E:/learning html/part10/part10.html" target="_blank">Next Part</a> 
+	</body>
+</html>
